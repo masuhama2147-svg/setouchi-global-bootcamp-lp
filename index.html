@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SETOUCHI GLOBAL BOOTCAMP 2026 | YURUGAS — 瀬戸内から、世界をゆるがす。</title>
+    <meta name="description"
+        content="SETOUCHI GLOBAL BOOTCAMP 2026。愛媛大学を舞台に、高校生・大学生が7日間でゼロからプロトタイプを生み出す実践型プログラム。定員50名。2026年8月16日〜22日。主催：愛媛大学 / YURUGAS。">
+    <meta property="og:title" content="SETOUCHI GLOBAL BOOTCAMP 2026 | 瀬戸内から、世界をゆるがす。">
+    <meta property="og:description" content="高校生・大学生50名が7日間でゼロからプロトタイプを生み出す実践型プログラム。愛媛大学主催。2026年8月16日〜22日。">
+    <meta property="og:type" content="website">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&family=Outfit:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== FLOATING APPLY BUTTON ===== -->
+    <a href="#apply" class="fab-apply" id="fabApply">
+        <i class="fa-solid fa-pen-to-square"></i>
+        <span>募集情報を受け取る</span>
+    </a>
+
+    <!-- ===== ANNOUNCEMENT BAR ===== -->
+    <div class="announcement-bar" id="announcementBar">
+        <div class="announcement-inner">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>次回説明会 — <strong>5月10日（土）愛媛大学・対面開催</strong>　参加無料・要申込</span>
+            <a href="#recruitment-schedule" class="btn-ghost-sm">日程を確認 <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <button class="bar-close" onclick="document.getElementById('announcementBar').style.display='none'"
+            aria-label="閉じる">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="glass-header" id="mainHeader">
+        <div class="header-container">
+            <a href="#hero" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-earth-asia"></i></span>
+                <span class="logo-text">SETOUCHI BOOTCAMP</span>
+            </a>
+            <nav class="desktop-nav">
+                <a href="#what">概要</a>
+                <a href="#schedule">7日間</a>
+                <a href="#who">参加者</a>
+                <a href="#faculty">講師陣</a>
+                <a href="#overview">開催概要</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switcher">
+                    <i class="fa-solid fa-globe"></i>
+                    <select id="lang-select">
+                        <option value="ja">JP</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+                <a href="#apply" class="btn btn-navy btn-small desktop-only">
+                    <i class="fa-solid fa-paper-plane"></i> 募集情報を受け取る
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="メニュー">
+                    <i class="fa-solid fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-drawer" id="mobileDrawer">
+            <a href="#what" class="mobile-nav-link">概要</a>
+            <a href="#schedule" class="mobile-nav-link">7日間</a>
+            <a href="#who" class="mobile-nav-link">参加者</a>
+            <a href="#faculty" class="mobile-nav-link">講師陣</a>
+            <a href="#overview" class="mobile-nav-link">開催概要</a>
+            <a href="#faq" class="mobile-nav-link">FAQ</a>
+            <a href="#apply" class="btn btn-navy btn-block mt-2">募集情報を受け取る</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===================================================
+             1. HERO
+             =================================================== -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content wrapper">
+                <div class="hero-badges">
+                    <span class="hero-badge badge-outline-light">
+                        <i class="fa-regular fa-calendar"></i> 2026年8月16日〜22日
+                    </span>
+                    <span class="hero-badge badge-outline-light">
+                        <i class="fa-solid fa-map-pin"></i> 愛媛大学・松山
+                    </span>
+                </div>
+                <p class="hero-program-name">SETOUCHI GLOBAL BOOTCAMP 2026</p>
+                <h1 class="hero-title serif-heading">
+                    瀬戸内から、<br>世界をゆるがす。
+                </h1>
+                <p class="hero-sub">気づき、考え、行動する7日間。</p>
+                <p class="hero-desc">
+                    高校生・大学生が本気でチームを組み、<br class="pc-only">
+                    ゼロから社会課題の解決策をつくり上げる実践型プログラム。
+                </p>
+                <div class="hero-meta-row">
+                    <div class="hero-meta-item">
+                        <i class="fa-solid fa-users"></i>
+                        <span>定員 <strong>50名</strong></span>
+                    </div>
+                    <span class="hero-meta-sep">|</span>
+                    <div class="hero-meta-item">
+                        <i class="fa-solid fa-school"></i>
+                        <span>高校生・大学生 対象</span>
+                    </div>
+                    <span class="hero-meta-sep">|</span>
+                    <div class="hero-meta-item">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span>愛媛・岡山 <strong>優先枠あり</strong></span>
+                    </div>
+                </div>
+                <div class="hero-ctas">
+                    <a href="#apply" class="btn btn-orange btn-large">
+                        <i class="fa-solid fa-paper-plane"></i> 募集情報を受け取る
+                    </a>
+                    <a href="#what" class="btn btn-outline-white btn-large">
+                        プログラムを詳しく見る
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <i class="fa-solid fa-chevron-down bounce"></i>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             2. このプログラムは何か（WHAT）
+             =================================================== -->
+        <section id="what" class="section bg-white reveal">
+            <div class="wrapper">
+                <div class="what-layout">
+                    <div class="what-text">
+                        <p class="section-label text-blue">WHAT IS THIS</p>
+                        <h2 class="section-heading serif-heading">
+                            このプログラムは<br>何をするのか
+                        </h2>
+                        <p class="body-large">
+                            SETOUCHI GLOBAL BOOTCAMPは、瀬戸内から世界に挑戦する次世代イノベーターを育てる<strong>7日間の実践型プログラム</strong>です。
+                        </p>
+                        <p class="body-large">
+                            テクノロジー・デザイン・ビジネスを統合し、社会課題の発見からプロトタイプ制作、ビジネスモデル設計まで——参加者はすべての工程を自分の手で実行します。
+                        </p>
+                        <p class="body-large">
+                            MIT発・世界12カ国4,000人以上に導入された<strong>Zero2Makerメソッド</strong>を基盤に、EnCube
+                            Labsが設計した実践カリキュラムを採用。「考える」だけでなく、「つくって動かす」体験が核心です。
+                        </p>
+                    </div>
+                    <div class="what-tags">
+                        <div class="what-image-block">
+                            <img src="https://www.rajeshnair.me/assets/images/framework.PNG" alt="Zero2Maker / Zero2Entrepreneur フレームワーク" class="what-framework-img">
+                            <p class="what-image-caption">MIT発 Pre-Entrepreneurship Development Framework</p>
+                        </div>
+                        <div class="tag-cloud">
+                            <span class="cloud-tag tag-blue">テクノロジー</span>
+                            <span class="cloud-tag tag-orange">デザイン思考</span>
+                            <span class="cloud-tag tag-green">ビジネスモデル</span>
+                            <span class="cloud-tag tag-blue">プロトタイピング</span>
+                            <span class="cloud-tag tag-gold">ピッチ</span>
+                            <span class="cloud-tag tag-orange">課題発見</span>
+                            <span class="cloud-tag tag-green">Zero2Maker</span>
+                            <span class="cloud-tag tag-blue">フィールドリサーチ</span>
+                            <span class="cloud-tag tag-orange">チームビルディング</span>
+                            <span class="cloud-tag tag-gold">Demo Day</span>
+                        </div>
+                        <div class="what-quote">
+                            <i class="fa-solid fa-quote-left text-blue"></i>
+                            <p>"世界を変えるアイデアは、<br>地域の課題の中に眠っている。"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             3. なぜこのキャンプをやるのか（WHY）
+             =================================================== -->
+        <section id="why" class="section bg-navy text-white reveal">
+            <div class="bg-pattern pattern-dots"></div>
+            <div class="wrapper relative-z">
+                <div class="section-header text-center mb-5">
+                    <p class="section-label text-green">WHY THIS CAMP</p>
+                    <h2 class="section-heading serif-heading">なぜ、このキャンプなのか</h2>
+                    <p class="section-sub text-light-sub">
+                        SETOUCHI GLOBAL BOOTCAMPは、3つの文脈が交差する唯一の場です。
+                    </p>
+                </div>
+                <div class="why-venn">
+                    <div class="why-pillar why-global">
+                        <div class="why-icon">
+                            <i class="fa-solid fa-earth-asia"></i>
+                        </div>
+                        <h3>Global</h3>
+                        <p>世界水準の方法論。MIT発のメソッドと国際的なメンター陣が、グローバルで通用する思考と実践力を育てる。</p>
+                    </div>
+                    <div class="why-center">
+                        <div class="why-center-inner">
+                            <span class="why-center-sub">接点</span>
+                            <h4>Setouchi<br>Global<br>Bootcamp</h4>
+                            <p>地域課題を<br>世界水準の<br>方法論で実践する</p>
+                        </div>
+                    </div>
+                    <div class="why-pillar why-regional">
+                        <div class="why-icon">
+                            <i class="fa-solid fa-mountain-sun"></i>
+                        </div>
+                        <h3>Regional</h3>
+                        <p>瀬戸内の地域課題。愛媛・岡山を起点に、地域に根ざした社会課題をリアルな「素材」として活用する。</p>
+                    </div>
+                    <div class="why-connector"></div>
+                    <div class="why-pillar why-research">
+                        <div class="why-icon">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+                        <h3>Research</h3>
+                        <p>愛媛大学との研究連携。大学の知的資源とフィールドを活かし、課題解決に学術的な深みを加える。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             4. 7日間で何をするのか（SCHEDULE）
+             =================================================== -->
+        <section id="schedule" class="section bg-light reveal">
+            <div class="wrapper">
+                <div class="section-header text-center mb-5">
+                    <p class="section-label text-navy">7-DAY PROGRAM</p>
+                    <h2 class="section-heading serif-heading">7日間で何をするのか</h2>
+                    <p class="section-sub">4つのフェーズで積み上がる「成長の階段」。</p>
+                </div>
+                <!-- Phase ladder -->
+                <div class="phase-ladder">
+                    <!-- Phase 1: DISCOVER -->
+                    <div class="phase-card phase-discover">
+                        <div class="phase-meta">
+                            <span class="phase-days">Days 1–2</span>
+                            <span class="phase-dates">8/16〜8/17</span>
+                        </div>
+                        <div class="phase-header">
+                            <div class="phase-num">01</div>
+                            <div>
+                                <p class="phase-en">DISCOVER</p>
+                                <h3 class="phase-ja">気づく</h3>
+                            </div>
+                            <div class="phase-icon-wrap">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="phase-label-pill">Maker Skills</div>
+                        <ul class="phase-list">
+                            <li><i class="fa-solid fa-circle-dot"></i>CAD・電子工作・コーディング</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>3Dプリンター体験</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>ストーリーテリング</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>チームビルディング・キックオフ</li>
+                        </ul>
+                        <p class="phase-goal">自分の手でものをつくる感覚を体得する</p>
+                    </div>
+                    <div class="phase-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+                    <!-- Phase 2: DESIGN -->
+                    <div class="phase-card phase-design">
+                        <div class="phase-meta">
+                            <span class="phase-days">Days 3–4</span>
+                            <span class="phase-dates">8/18〜8/19</span>
+                        </div>
+                        <div class="phase-header">
+                            <div class="phase-num">02</div>
+                            <div>
+                                <p class="phase-en">DESIGN</p>
+                                <h3 class="phase-ja">考える</h3>
+                            </div>
+                            <div class="phase-icon-wrap">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                        </div>
+                        <div class="phase-label-pill">Innovation Exploration</div>
+                        <ul class="phase-list">
+                            <li><i class="fa-solid fa-circle-dot"></i>関与と観察・フィールドリサーチ</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>課題同定・アイデア創出</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>プロトタイピング・バリデーション</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>グローバルセッション（海外メンター）</li>
+                        </ul>
+                        <p class="phase-goal">社会課題をとらえ、解決策の原型を描く</p>
+                    </div>
+                    <div class="phase-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+                    <!-- Phase 3: BUILD -->
+                    <div class="phase-card phase-build">
+                        <div class="phase-meta">
+                            <span class="phase-days">Days 5–6</span>
+                            <span class="phase-dates">8/20〜8/21</span>
+                        </div>
+                        <div class="phase-header">
+                            <div class="phase-num">03</div>
+                            <div>
+                                <p class="phase-en">BUILD</p>
+                                <h3 class="phase-ja">行動する</h3>
+                            </div>
+                            <div class="phase-icon-wrap">
+                                <i class="fa-solid fa-person-running"></i>
+                            </div>
+                        </div>
+                        <div class="phase-label-pill">Entrepreneurship Venture</div>
+                        <ul class="phase-list">
+                            <li><i class="fa-solid fa-circle-dot"></i>価値提案・顧客の同定</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>ビジネスモデル設計・財務モデリング</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>仮説検証・ユーザーテスト</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>ピッチ準備・最終磨き込み</li>
+                        </ul>
+                        <p class="phase-goal">アイデアをビジネスとして成立させる</p>
+                    </div>
+                    <div class="phase-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+                    <!-- Phase 4: DEMO DAY -->
+                    <div class="phase-card phase-demo">
+                        <div class="phase-meta">
+                            <span class="phase-days">Day 7</span>
+                            <span class="phase-dates">8/22 (土)</span>
+                        </div>
+                        <div class="phase-header">
+                            <div class="phase-num">04</div>
+                            <div>
+                                <p class="phase-en">DEMO DAY</p>
+                                <h3 class="phase-ja">世界へ届ける</h3>
+                            </div>
+                            <div class="phase-icon-wrap">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                        </div>
+                        <div class="phase-label-pill phase-label-gold">最終発表</div>
+                        <ul class="phase-list">
+                            <li><i class="fa-solid fa-circle-dot"></i>最終ピッチ（成果発表）</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>審査員による審査・表彰</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>修了証明書の授与</li>
+                            <li><i class="fa-solid fa-circle-dot"></i>懇親会・ネットワーキング</li>
+                        </ul>
+                        <p class="phase-goal">7日間の成果を世界に向けて発信する</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             5. どんな人が参加するのか（WHO）
+             =================================================== -->
+        <section id="who" class="section bg-white reveal">
+            <div class="wrapper">
+                <div class="section-header text-center mb-5">
+                    <p class="section-label text-navy">THE COHORT</p>
+                    <h2 class="section-heading serif-heading">どんな人が参加するのか</h2>
+                    <p class="section-sub">定員50名。多様な背景と視点が、チームの力になる。</p>
+                </div>
+                <div class="cohort-layout">
+                    <!-- Main breakdown -->
+                    <div class="cohort-main">
+                        <div class="cohort-total-display">
+                            <span class="cohort-num">50</span>
+                            <span class="cohort-unit">名</span>
+                            <span class="cohort-label">5名 × 10チーム</span>
+                        </div>
+                        <div class="cohort-bars">
+                            <div class="cohort-bar">
+                                <div class="bar-info">
+                                    <i class="fa-solid fa-school text-blue"></i>
+                                    <span>高校生</span>
+                                    <strong>25名</strong>
+                                </div>
+                                <div class="bar-track">
+                                    <div class="bar-fill bg-blue" style="width:50%"></div>
+                                </div>
+                            </div>
+                            <div class="cohort-bar">
+                                <div class="bar-info">
+                                    <i class="fa-solid fa-graduation-cap text-orange"></i>
+                                    <span>大学生</span>
+                                    <strong>25名</strong>
+                                </div>
+                                <div class="bar-track">
+                                    <div class="bar-fill bg-orange" style="width:50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Regional breakdown -->
+                    <div class="cohort-regional">
+                        <h4 class="cohort-section-title">
+                            <i class="fa-solid fa-map-location-dot text-navy"></i>
+                            地域枠の内訳
+                        </h4>
+                        <div class="region-items">
+                            <div class="region-item region-priority">
+                                <div class="region-bar" style="width:70%"></div>
+                                <div class="region-info">
+                                    <span class="region-name">愛媛・岡山 優先枠</span>
+                                    <span class="region-num">35名</span>
+                                </div>
+                            </div>
+                            <div class="region-item">
+                                <div class="region-bar" style="width:10%"></div>
+                                <div class="region-info">
+                                    <span class="region-name">県外枠</span>
+                                    <span class="region-num">5名</span>
+                                </div>
+                            </div>
+                            <div class="region-item region-intl">
+                                <div class="region-bar" style="width:20%"></div>
+                                <div class="region-info">
+                                    <span class="region-name">インターナショナル枠</span>
+                                    <span class="region-num">10名</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mentors -->
+                    <div class="cohort-mentors">
+                        <h4 class="cohort-section-title">
+                            <i class="fa-solid fa-chalkboard-user text-green"></i>
+                            伴走するメンター陣
+                        </h4>
+                        <div class="mentor-items">
+                            <div class="mentor-item">
+                                <div class="mentor-icon bg-blue">
+                                    <i class="fa-solid fa-earth-asia"></i>
+                                </div>
+                                <div>
+                                    <strong>Global Peer Mentors</strong>
+                                    <span>5名 — 国内外トップ大学から</span>
+                                </div>
+                            </div>
+                            <div class="mentor-item">
+                                <div class="mentor-icon bg-green">
+                                    <i class="fa-solid fa-mountain-sun"></i>
+                                </div>
+                                <div>
+                                    <strong>Local Peer Mentors</strong>
+                                    <span>8名 — 愛媛大学教育学部生</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Who should apply note -->
+                <div class="who-note mt-5">
+                    <div class="who-note-inner">
+                        <i class="fa-solid fa-circle-info text-blue"></i>
+                        <p>英語力は問いません。<strong>「社会をよくしたい」という意欲</strong>と、チームで動けるアクション志向があれば参加できます。起業経験・ビジネス知識も不要です。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             5.5 Zero2Maker GALLERY
+             =================================================== -->
+        <section class="section-sm bg-navy text-white reveal">
+            <div class="wrapper">
+                <div class="z2m-gallery">
+                    <div class="z2m-gallery-text">
+                        <p class="section-label text-green">ZERO2MAKER METHOD</p>
+                        <h3 class="serif-heading" style="font-size:1.5rem;">MIT発の実践メソッドを採用</h3>
+                        <p style="color:rgba(255,255,255,.75); line-height:1.7;">
+                            Zero2Makerグラフィックワークブックは、STEM・デザイン・起業家精神を融合した体験型教材。イラストとステップバイステップのプロジェクトで、アイデア発想からプロトタイピング、3D設計、回路、コーディングまでを学びます。
+                        </p>
+                    </div>
+                    <div class="z2m-gallery-img">
+                        <img src="https://www.rajeshnair.me/assets/images/z2m-comicbooks.png" alt="Zero2Maker Graphic Workbooks" class="z2m-workbook-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             6. 参加して得られること（OUTCOMES）
+             =================================================== -->
+        <section id="outcomes" class="section bg-light reveal">
+            <div class="wrapper">
+                <div class="section-header text-center mb-5">
+                    <p class="section-label text-orange">OUTCOMES</p>
+                    <h2 class="section-heading serif-heading">参加して得られること</h2>
+                </div>
+                <div class="outcomes-grid">
+                    <div class="outcome-card">
+                        <div class="outcome-icon bg-blue">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3>ゼロからつくる体験</h3>
+                        <p>CAD・コーディング・3Dプリンターを使い、アイデアを実際に動くプロトタイプとして形にする。「考えた」ではなく「つくった」という事実が残る。</p>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon bg-orange">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                        </div>
+                        <h3>英語でのピッチ経験</h3>
+                        <p>最終発表は日英バイリンガルで実施。海外メンターの前で自分のアイデアを届ける緊張と達成感が、英語への自信に変わる。</p>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon bg-green">
+                            <i class="fa-solid fa-binoculars"></i>
+                        </div>
+                        <h3>地域課題を見る視点</h3>
+                        <p>瀬戸内のフィールドに出て、地域社会の課題を自分の目で観察・分析する。社会問題を「自分ごと」として捉える視座が育つ。</p>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon bg-navy">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <h3>国内外の同世代との協働</h3>
+                        <p>異なる地域・背景・言語を持つ50名と7日間本気でチームを組む。この経験と繋がりは、キャンプ後も続く本物のネットワークになる。</p>
+                    </div>
+                </div>
+
+                <!-- Mentor track note -->
+                <div class="mentor-track-note mt-5">
+                    <div class="mentor-track-inner">
+                        <div class="mentor-track-icon">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <div>
+                            <strong>Local Peer Mentorとして参加したい方へ</strong>
+                            <p>愛媛大学教育学部の学生を対象に、Local Peer Mentor（8名）を別途募集します。詳細は<a href="#apply">こちら</a>からお問い合わせください。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             7. 講師・運営陣（FACULTY）
+             =================================================== -->
+        <section id="faculty" class="section bg-white reveal">
+            <div class="wrapper">
+                <div class="section-header text-center mb-5">
+                    <p class="section-label text-navy">FACULTY & ORGANIZERS</p>
+                    <h2 class="section-heading serif-heading">講師・運営陣</h2>
+                    <p class="section-sub">このプログラムを信頼できる理由は、ここにあります。</p>
+                </div>
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <img class="faculty-avatar-img" src="https://d3t35pgnsskh52.cloudfront.net/uploads%2F44436_Rajesh+pic3.jpg" alt="Rajesh Nair">
+                        <h4>Rajesh Nair</h4>
+                        <p class="faculty-role">CEO, EnCube Labs</p>
+                        <p class="faculty-desc">
+                            MIT発の起業家教育フレームワーク「Zero2Maker」開発者。世界12カ国・4,000人以上の若者を起業家思考へと導いてきた。本プログラムのカリキュラム設計を統括する。</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img class="faculty-avatar-img" src="https://miro.medium.com/v2/resize:fill:400:400/1*xh44TLk8xsHTQbOAnHwsPw.png" alt="白川 寧々">
+                        <h4>白川 寧々</h4>
+                        <p class="faculty-role">Co-founder, EnCube Labs / MIT MBA</p>
+                        <p class="faculty-desc">
+                            グローバル教育プログラム「FutureHACK」創設者。MITのMBAを修了後、日本とアジアにおけるアントレプレナーシップ教育を牽引。本プログラムの教育設計を担う。</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img class="faculty-avatar-img" src="images/ishihara-yuka.jpg" alt="石原 裕香">
+                        <h4>石原 裕香</h4>
+                        <p class="faculty-role">愛媛大学 特任准教授</p>
+                        <p class="faculty-desc">愛媛大学側の本プログラムディレクター。地域と世界をつなぐアントレプレナーシップ教育を研究・実践。本キャンプの会場・学術基盤を統括する。</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img class="faculty-avatar-img" src="https://prcdn.freetls.fastly.net/release_image/32288/71/32288-71-be51c4ab4c34b677bd8f08e8add7bf82-1754x1758.png" alt="大崎 龍史">
+                        <h4>大崎 龍史</h4>
+                        <p class="faculty-role">CEO, Setouchi Sunny</p>
+                        <p class="faculty-desc">瀬戸内の魅力を国内外に発信するメディア・コミュニティを運営。地域起業家として若者のチャレンジを支援し、地域フィールドプログラムの設計を担当する。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             8. 数字で見る信頼性（TRUST）
+             =================================================== -->
+        <section id="trust" class="section bg-navy text-white reveal">
+            <div class="bg-pattern pattern-dots"></div>
+            <div class="wrapper relative-z">
+                <div class="section-header text-center mb-5">
+                    <p class="section-label text-green">NUMBERS</p>
+                    <h2 class="section-heading serif-heading">数字で見る信頼性</h2>
+                </div>
+                <div class="trust-grid">
+                    <div class="trust-card">
+                        <div class="trust-num text-gold">50</div>
+                        <div class="trust-unit">名</div>
+                        <p class="trust-desc">厳選された参加者。5名×10チームの少人数制で、一人ひとりの成長を最大化する。</p>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-num text-blue">12</div>
+                        <div class="trust-unit">カ国</div>
+                        <p class="trust-desc">Zero2Makerメソッドが導入されてきた国の数。4,000人以上の若者が同じ方法論で学んできた。</p>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-num text-green">5</div>
+                        <div class="trust-unit">名</div>
+                        <p class="trust-desc">国内外トップ大学から招聘するGlobal Peer Mentors。世界基準の視点を直接届ける。</p>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-num text-orange">4,000<span>+</span></div>
+                        <div class="trust-unit">人</div>
+                        <p class="trust-desc">EnCube LabsのZero2Makerメソッドが実証済みの総参加者数。この実績がカリキュラムの背景にある。</p>
+                    </div>
+                </div>
+                <div class="trust-orgs">
+                    <p class="trust-orgs-label">主催・運営</p>
+                    <div class="trust-orgs-list">
+                        <div class="trust-org">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <span>愛媛大学（主催）</span>
+                        </div>
+                        <div class="trust-org-sep"></div>
+                        <div class="trust-org">
+                            <i class="fa-solid fa-earth-asia"></i>
+                            <span>YURUGAS事務局（運営）</span>
+                        </div>
+                        <div class="trust-org-sep"></div>
+                        <div class="trust-org">
+                            <i class="fa-solid fa-flask"></i>
+                            <span>EnCube Labs（カリキュラム設計）</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             9. 開催概要（OVERVIEW）
+             =================================================== -->
+        <section id="overview" class="section bg-white reveal">
+            <div class="wrapper">
+                <div class="section-header text-center mb-5">
+                    <p class="section-label text-blue">PROGRAM DETAILS</p>
+                    <h2 class="section-heading serif-heading">開催概要</h2>
+                    <p class="section-sub">参加の判断に必要な情報をすべてまとめました。</p>
+                </div>
+                <div class="overview-grid">
+                    <div class="overview-table-wrap">
+                        <table class="overview-table">
+                            <tbody>
+                                <tr>
+                                    <th><i class="fa-regular fa-calendar text-blue"></i> 日程</th>
+                                    <td>2026年8月16日（日）〜 8月22日（土）<span class="td-sub">7日間（宿泊込み）</span></td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-map-pin text-blue"></i> 場所</th>
+                                    <td>愛媛大学（愛媛県松山市）<span class="td-sub">会場詳細は参加決定後にご案内</span></td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-users text-blue"></i> 定員</th>
+                                    <td>50名（5名 × 10チーム）</td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-school text-blue"></i> 対象</th>
+                                    <td>高校生（25名）・大学生（25名）<span class="td-sub">愛媛・岡山 優先枠 35名 / 県外枠 5名 / インターナショナル枠
+                                            10名</span></td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-language text-blue"></i> 使用言語</th>
+                                    <td>日本語・英語（バイリンガル運営）<span class="td-sub">英語力不問。意欲があれば参加できます</span></td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-yen-sign text-blue"></i> 参加費</th>
+                                    <td>
+                                        <div class="fee-grid">
+                                            <div class="fee-item">
+                                                <span class="fee-cat">高校生</span>
+                                                <span class="fee-amount">¥100,000<span
+                                                        class="fee-note">（税込）</span></span>
+                                            </div>
+                                            <div class="fee-item">
+                                                <span class="fee-cat">大学生</span>
+                                                <span class="fee-amount">¥150,000<span
+                                                        class="fee-note">（税込）</span></span>
+                                            </div>
+                                        </div>
+                                        <p class="td-sub">補助金採択状況により減額・無償になる可能性あり</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-circle-check text-blue"></i> 含まれるもの</th>
+                                    <td>
+                                        <div class="includes-inline">
+                                            <span>宿泊費（6泊）</span>
+                                            <span>食費（3食）</span>
+                                            <span>プログラム教材</span>
+                                            <span>メンタリング</span>
+                                            <span>修了証明書</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-clock text-orange"></i> 早期締切</th>
+                                    <td><strong class="text-orange">2026年6月10日（火）</strong></td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-clock text-crimson"></i> 最終締切</th>
+                                    <td><strong class="text-crimson">2026年6月30日（火）</strong></td>
+                                </tr>
+                                <tr>
+                                    <th><i class="fa-solid fa-bell text-green"></i> 合格発表</th>
+                                    <td><strong class="text-green">2026年7月10日（金）</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="overview-cta-col">
+                        <div class="overview-cta-card">
+                            <h3>まず説明会へ</h3>
+                            <p>プログラムの詳細・選考基準・費用補助について説明します。参加無料。</p>
+                            <a href="#recruitment-schedule" class="btn btn-navy btn-block">
+                                説明会日程を確認する <i class="fa-solid fa-arrow-down"></i>
+                            </a>
+                            <div class="overview-cta-sub">
+                                <a href="#apply" class="link-underline">説明会を待たずに登録する →</a>
+                            </div>
+                        </div>
+                        <div class="overview-note">
+                            <i class="fa-solid fa-circle-info text-blue"></i>
+                            <p>補助金の採択状況によっては、参加費が大幅に減額または無償となる可能性があります。詳細は説明会でご案内します。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             10. 募集スケジュール（RECRUITMENT）
+             =================================================== -->
+        <section id="recruitment-schedule" class="section bg-light reveal">
+            <div class="wrapper">
+                <div class="section-header text-center mb-5">
+                    <p class="section-label text-orange">RECRUITMENT SCHEDULE</p>
+                    <h2 class="section-heading serif-heading">募集スケジュール</h2>
+                    <p class="section-sub">次に何をすればよいか、一目でわかります。</p>
+                </div>
+                <div class="recruit-timeline">
+                    <div class="recruit-item">
+                        <div class="recruit-date">
+                            <span class="recruit-month">5月</span>
+                            <span class="recruit-day">10日</span>
+                        </div>
+                        <div class="recruit-connector"></div>
+                        <div class="recruit-content">
+                            <div class="recruit-badge badge-inperson">対面</div>
+                            <h4>説明会①</h4>
+                            <p>愛媛大学（松山）での対面開催。プログラム内容・選考・費用について詳しく説明します。</p>
+                        </div>
+                    </div>
+                    <div class="recruit-item">
+                        <div class="recruit-date">
+                            <span class="recruit-month">5月</span>
+                            <span class="recruit-day">25日</span>
+                        </div>
+                        <div class="recruit-connector"></div>
+                        <div class="recruit-content">
+                            <div class="recruit-badge badge-online">オンライン</div>
+                            <h4>説明会②</h4>
+                            <p>オンライン開催（Zoom）。遠方からでも参加可能。</p>
+                        </div>
+                    </div>
+                    <div class="recruit-item">
+                        <div class="recruit-date">
+                            <span class="recruit-month">6月</span>
+                            <span class="recruit-day">7日</span>
+                        </div>
+                        <div class="recruit-connector"></div>
+                        <div class="recruit-content">
+                            <div class="recruit-badge badge-online">オンライン</div>
+                            <h4>説明会③</h4>
+                            <p>オンライン開催（Zoom）。個別質問にも対応します。</p>
+                        </div>
+                    </div>
+                    <div class="recruit-item">
+                        <div class="recruit-date">
+                            <span class="recruit-month">6月</span>
+                            <span class="recruit-day">10日</span>
+                        </div>
+                        <div class="recruit-connector"></div>
+                        <div class="recruit-content recruit-deadline">
+                            <div class="recruit-badge badge-deadline">早期締切</div>
+                            <h4>応募 早期締切</h4>
+                            <p>早期応募者は優先的に選考・フィードバックを受け取れます。</p>
+                        </div>
+                    </div>
+                    <div class="recruit-item">
+                        <div class="recruit-date">
+                            <span class="recruit-month">6月</span>
+                            <span class="recruit-day">13日</span>
+                        </div>
+                        <div class="recruit-connector"></div>
+                        <div class="recruit-content">
+                            <div class="recruit-badge badge-online">オンライン</div>
+                            <h4>説明会④</h4>
+                            <p>オンライン開催（Zoom）。最終説明会。締切前の最後の機会。</p>
+                        </div>
+                    </div>
+                    <div class="recruit-item">
+                        <div class="recruit-date">
+                            <span class="recruit-month">6月</span>
+                            <span class="recruit-day">30日</span>
+                        </div>
+                        <div class="recruit-connector"></div>
+                        <div class="recruit-content recruit-final-deadline">
+                            <div class="recruit-badge badge-final">最終締切</div>
+                            <h4>応募 最終締切</h4>
+                            <p>この日をもって2026年度の募集を締め切ります。</p>
+                        </div>
+                    </div>
+                    <div class="recruit-item recruit-item-last">
+                        <div class="recruit-date">
+                            <span class="recruit-month">7月</span>
+                            <span class="recruit-day">10日</span>
+                        </div>
+                        <div class="recruit-connector recruit-connector-gold"></div>
+                        <div class="recruit-content recruit-result">
+                            <div class="recruit-badge badge-result">合格発表</div>
+                            <h4>合格発表</h4>
+                            <p>結果をメールにてお知らせします。合格者には参加手続きの案内を送付します。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recruit-cta text-center mt-5">
+                    <p class="recruit-cta-text">まずは説明会の参加登録、または募集情報の受け取りから始めましょう。</p>
+                    <a href="#apply" class="btn btn-orange btn-large">
+                        <i class="fa-solid fa-paper-plane"></i> 募集情報を受け取る（無料）
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             11. FAQ
+             =================================================== -->
+        <section id="faq" class="section bg-white reveal">
+            <div class="wrapper">
+                <div class="section-header text-center mb-5">
+                    <p class="section-label text-navy">FAQ</p>
+                    <h2 class="section-heading serif-heading">よくある質問</h2>
+                </div>
+                <div class="faq-list" id="faqList">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            英語が苦手でも参加できますか？
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>はい、参加できます。本プログラムは日本語・英語のバイリンガルで運営されており、スタッフによるサポートも設けています。英語力よりも、チャレンジする意欲と熱意を重視しています。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            愛媛県外・県外からでも参加できますか？
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>参加できます。愛媛・岡山優先枠（35名）のほか、県外枠（5名）・インターナショナル枠（10名）を設けています。宿泊費はプログラム費に含まれていますので、遠方の方もご安心ください。なお、交通費は個人負担となります。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            起業経験・ビジネス知識がなくても参加できますか？
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>はい。「ZERO TO
+                                ENTREPRENEUR」のコンセプト通り、ゼロから起業家思考を育てるプログラムです。ビジネス・プログラミング・デザインの経験は一切不要です。むしろ「何も知らない状態」で来ることを歓迎します。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            奨学金・費用補助の可能性はありますか？
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>補助金の採択状況によっては、参加費が大幅に減額または無償となる可能性があります。経済的な理由で参加をためらっている方は、説明会またはお問い合わせフォームからご相談ください。費用を理由に諦めないでください。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            選考はありますか？どんな基準で選ばれますか？
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>正式応募後に書類選考があります。学歴・成績・経歴ではなく、「なぜ参加したいか」「どんな社会課題に関心があるか」という熱意と具体性を最重視します。まず説明会・募集情報登録から始めてください。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            保護者・学校への説明資料はありますか？
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>保護者・担任の先生向けの説明資料（PDF）をご用意しています。募集情報登録後にお送りする案内メール、または説明会でお渡しします。学校単位での参加相談も承ります。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             12. 応募・CTA（APPLY）
+             =================================================== -->
+        <section id="apply" class="section bg-navy text-white reveal">
+            <div class="bg-pattern pattern-dots"></div>
+            <div class="wrapper relative-z">
+                <div class="apply-layout">
+                    <div class="apply-text">
+                        <p class="section-label text-orange">GET STARTED</p>
+                        <h2 class="section-heading serif-heading">
+                            まず、情報を<br>受け取ろう。
+                        </h2>
+                        <p class="apply-desc">
+                            正式な応募フォームは5月に公開予定です。<br>
+                            今すぐ登録すると、説明会の案内・費用補助の最新情報・応募開始のお知らせをいち早くお届けします。
+                        </p>
+                        <div class="apply-points">
+                            <div class="apply-point">
+                                <i class="fa-solid fa-circle-check text-green"></i>
+                                <span>登録は<strong>無料・無条件</strong>です</span>
+                            </div>
+                            <div class="apply-point">
+                                <i class="fa-solid fa-circle-check text-green"></i>
+                                <span>説明会の案内メールをお届けします</span>
+                            </div>
+                            <div class="apply-point">
+                                <i class="fa-solid fa-circle-check text-green"></i>
+                                <span>保護者・学校向け資料もお送りします</span>
+                            </div>
+                            <div class="apply-point">
+                                <i class="fa-solid fa-circle-check text-green"></i>
+                                <span>費用補助の最新情報を優先的にご連絡</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apply-form-wrap">
+                        <form class="apply-form" id="applyForm">
+                            <h3 class="form-title">募集情報 登録フォーム</h3>
+                            <div class="form-group">
+                                <label for="fname">お名前 <span class="req">*</span></label>
+                                <input type="text" id="fname" name="name" placeholder="山田 太郎" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="femail">メールアドレス <span class="req">*</span></label>
+                                <input type="email" id="femail" name="email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fcat">あなたの立場 <span class="req">*</span></label>
+                                <select id="fcat" name="category" required>
+                                    <option value="">選択してください</option>
+                                    <option value="hs">高校生（参加希望）</option>
+                                    <option value="uni">大学生（参加希望）</option>
+                                    <option value="mentor">大学生（メンター希望）</option>
+                                    <option value="parent">保護者</option>
+                                    <option value="teacher">教員・学校関係者</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="fregion">お住まいの都道府県（任意）</label>
+                                <input type="text" id="fregion" name="region" placeholder="例：愛媛県">
+                            </div>
+                            <button type="submit" class="btn btn-orange btn-block btn-large">
+                                <i class="fa-solid fa-paper-plane"></i> 最新情報を受け取る（無料）
+                            </button>
+                            <p class="form-note">
+                                <i class="fa-solid fa-lock"></i>
+                                個人情報は厳重に管理し、第三者への提供は行いません。
+                            </p>
+                        </form>
+                        <div class="form-success" id="formSuccess">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <h3>登録完了しました</h3>
+                            <p>ご登録ありがとうございます。<br>説明会案内・応募開始の情報をメールでお届けします。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             PARTNERS（小さく、フッター手前に）
+             =================================================== -->
+        <section class="section-sm bg-light reveal">
+            <div class="wrapper">
+                <p class="partners-label">主催・連携機関</p>
+                <div class="partners-bar">
+                    <div class="partner-mini">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>愛媛大学</span>
+                    </div>
+                    <div class="partner-mini-sep"></div>
+                    <div class="partner-mini">
+                        <i class="fa-solid fa-earth-asia"></i>
+                        <span>YURUGAS</span>
+                    </div>
+                    <div class="partner-mini-sep"></div>
+                    <div class="partner-mini">
+                        <i class="fa-solid fa-flask"></i>
+                        <span>EnCube Labs</span>
+                    </div>
+                    <div class="partner-mini-sep"></div>
+                    <div class="partner-mini">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>University of New Hampshire</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer bg-maroon text-white">
+        <div class="wrapper">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-earth-asia"></i>
+                        <span>SETOUCHI BOOTCAMP</span>
+                    </div>
+                    <p class="footer-tagline">瀬戸内から、次世代のグローバル起業家を育てる。</p>
+                    <p class="footer-hosted">主催：愛媛大学 / 運営：YURUGAS事務局</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>プログラム</h4>
+                    <ul>
+                        <li><a href="#what">概要</a></li>
+                        <li><a href="#schedule">7日間</a></li>
+                        <li><a href="#who">参加者構成</a></li>
+                        <li><a href="#outcomes">得られること</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>情報</h4>
+                    <ul>
+                        <li><a href="#faculty">講師・運営陣</a></li>
+                        <li><a href="#overview">開催概要・費用</a></li>
+                        <li><a href="#recruitment-schedule">募集スケジュール</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>参加する</h4>
+                    <ul>
+                        <li><a href="#apply">募集情報を受け取る</a></li>
+                        <li><a href="#recruitment-schedule">説明会に参加する</a></li>
+                    </ul>
+                    <a href="#apply" class="btn btn-orange btn-small mt-3">今すぐ登録</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SETOUCHI GLOBAL BOOTCAMP / YURUGAS. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">プライバシーポリシー</a>
+                    <span>|</span>
+                    <a href="#">利用規約</a>
+                    <span>|</span>
+                    <a href="#apply">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
