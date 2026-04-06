@@ -29,18 +29,6 @@
     </a>
 
     <!-- ===== ANNOUNCEMENT BAR ===== -->
-    <div class="announcement-bar" id="announcementBar">
-        <div class="announcement-inner">
-            <i class="fa-solid fa-bullhorn"></i>
-            <span>次回説明会 — <strong>5月10日（土）愛媛大学・対面開催</strong>　参加無料・要申込</span>
-            <a href="#recruitment-schedule" class="btn-ghost-sm">日程を確認 <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <button class="bar-close" onclick="document.getElementById('announcementBar').style.display='none'"
-            aria-label="閉じる">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-    </div>
-
     <!-- ===== HEADER ===== -->
     <header class="glass-header" id="mainHeader">
         <div class="header-container">
@@ -159,46 +147,45 @@
              =================================================== -->
         <section id="what" class="section bg-white reveal">
             <div class="wrapper">
-                <div class="what-layout">
-                    <div class="what-text">
-                        <p class="section-label text-blue">WHAT IS THIS</p>
-                        <h2 class="section-heading serif-heading">
-                            このプログラムは<br>何をするのか
-                        </h2>
-                        <p class="body-large">
-                            SETOUCHI GLOBAL BOOTCAMPは、瀬戸内から世界に挑戦する次世代イノベーターを育てる<strong>7日間の実践型プログラム</strong>です。
-                        </p>
-                        <p class="body-large">
-                            テクノロジー・デザイン・ビジネスを統合し、社会課題の発見からプロトタイプ制作、ビジネスモデル設計まで——参加者はすべての工程を自分の手で実行します。
-                        </p>
-                        <p class="body-large">
-                            MIT発・世界12カ国4,000人以上に導入された<strong>Zero2Makerメソッド</strong>を基盤に、EnCube
-                            Labsが設計した実践カリキュラムを採用。「考える」だけでなく、「つくって動かす」体験が核心です。
-                        </p>
+                <!-- Header centered -->
+                <div class="section-header text-center mb-5">
+                    <p class="section-label text-blue">WHAT IS THIS</p>
+                    <h2 class="section-heading serif-heading what-heading">
+                        このプログラムは何をするのか
+                    </h2>
+                </div>
+
+                <!-- Framework image full-width hero -->
+                <div class="what-framework-hero reveal">
+                    <img src="https://zero2maker.com/images/zero-to-entrepreneur-framework.jpg" alt="Zero2Maker / Zero2Entrepreneur フレームワーク" class="what-framework-img">
+                    <p class="what-image-caption">MIT発 Pre-Entrepreneurship Development Framework</p>
+                </div>
+
+                <!-- 3-column feature cards -->
+                <div class="what-features reveal">
+                    <div class="what-feature-card">
+                        <div class="what-feature-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3>7日間の実践型プログラム</h3>
+                        <p>SETOUCHI GLOBAL BOOTCAMPは、瀬戸内から世界に挑戦する次世代イノベーターを育てる集中プログラムです。</p>
                     </div>
-                    <div class="what-tags">
-                        <div class="what-image-block">
-                            <img src="https://zero2maker.com/images/zero-to-entrepreneur-framework.jpg" alt="Zero2Maker / Zero2Entrepreneur フレームワーク" class="what-framework-img">
-                            <p class="what-image-caption">MIT発 Pre-Entrepreneurship Development Framework</p>
+                    <div class="what-feature-card">
+                        <div class="what-feature-icon icon-orange">
+                            <i class="fa-solid fa-cubes"></i>
                         </div>
-                        <div class="tag-cloud">
-                            <span class="cloud-tag tag-blue">テクノロジー</span>
-                            <span class="cloud-tag tag-orange">デザイン思考</span>
-                            <span class="cloud-tag tag-green">ビジネスモデル</span>
-                            <span class="cloud-tag tag-blue">プロトタイピング</span>
-                            <span class="cloud-tag tag-gold">ピッチ</span>
-                            <span class="cloud-tag tag-orange">課題発見</span>
-                            <span class="cloud-tag tag-green">Zero2Maker</span>
-                            <span class="cloud-tag tag-blue">フィールドリサーチ</span>
-                            <span class="cloud-tag tag-orange">チームビルディング</span>
-                            <span class="cloud-tag tag-gold">Demo Day</span>
+                        <h3>つくって動かす体験</h3>
+                        <p>テクノロジー・デザイン・ビジネスを統合し、社会課題の発見からプロトタイプ制作、ビジネスモデル設計まで自分の手で実行します。</p>
+                    </div>
+                    <div class="what-feature-card">
+                        <div class="what-feature-icon icon-green">
+                            <i class="fa-solid fa-globe"></i>
                         </div>
-                        <div class="what-quote">
-                            <i class="fa-solid fa-quote-left text-blue"></i>
-                            <p>"世界を変えるアイデアは、<br>地域の課題の中に眠っている。"</p>
-                        </div>
+                        <h3>Zero2Makerメソッド</h3>
+                        <p>MIT発・世界12カ国4,000人以上に導入されたメソッドを基盤に、EnCube Labsが設計した実践カリキュラムを採用。</p>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -207,6 +194,12 @@
              =================================================== -->
         <section id="why" class="section bg-navy text-white reveal">
             <div class="bg-pattern pattern-dots"></div>
+            <!-- Layer 3: Ambient breathing lights -->
+            <div class="why-ambient" aria-hidden="true">
+                <div class="ambient-orb ambient-blue"></div>
+                <div class="ambient-orb ambient-green"></div>
+                <div class="ambient-orb ambient-gold"></div>
+            </div>
             <div class="wrapper relative-z">
                 <div class="section-header text-center mb-5">
                     <p class="section-label text-green">WHY THIS CAMP</p>
@@ -215,36 +208,76 @@
                         SETOUCHI GLOBAL BOOTCAMPは、3つの文脈が交差する唯一の場です。
                     </p>
                 </div>
-                <div class="why-venn">
-                    <div class="why-pillar why-global">
-                        <div class="why-icon">
-                            <i class="fa-solid fa-earth-asia"></i>
+
+                <!-- 3-column symmetric grid -->
+                <div class="why-grid">
+                    <div class="why-card why-global">
+                        <div class="why-card-bg">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://zero2entrepreneur.com/images/z2e-workshop-video.mp4" type="video/mp4">
+                            </video>
                         </div>
-                        <h3>Global</h3>
-                        <p>世界水準の方法論。MIT発のメソッドと国際的なメンター陣が、グローバルで通用する思考と実践力を育てる。</p>
-                    </div>
-                    <div class="why-center">
-                        <div class="why-center-inner">
-                            <span class="why-center-sub">接点</span>
-                            <h4>Setouchi<br>Global<br>Bootcamp</h4>
-                            <p>地域課題を<br>世界水準の<br>方法論で実践する</p>
+                        <div class="why-card-content">
+                            <div class="why-icon">
+                                <i class="fa-solid fa-earth-asia"></i>
+                            </div>
+                            <h3>Global</h3>
+                            <div class="why-card-line"></div>
+                            <p>世界水準の方法論。MIT発のメソッドと国際的なメンター陣が、グローバルで通用する思考と実践力を育てる。</p>
                         </div>
                     </div>
-                    <div class="why-pillar why-regional">
-                        <div class="why-icon">
-                            <i class="fa-solid fa-mountain-sun"></i>
+
+                    <div class="why-card why-regional">
+                        <div class="why-card-bg">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://zero2entrepreneur.com/images/z2e-field-video.mp4" type="video/mp4">
+                            </video>
                         </div>
-                        <h3>Regional</h3>
-                        <p>瀬戸内の地域課題。愛媛・岡山を起点に、地域に根ざした社会課題をリアルな「素材」として活用する。</p>
-                    </div>
-                    <div class="why-connector"></div>
-                    <div class="why-pillar why-research">
-                        <div class="why-icon">
-                            <i class="fa-solid fa-flask"></i>
+                        <div class="why-card-content">
+                            <div class="why-icon">
+                                <i class="fa-solid fa-mountain-sun"></i>
+                            </div>
+                            <h3>Regional</h3>
+                            <div class="why-card-line"></div>
+                            <p>瀬戸内の地域課題。愛媛・岡山を起点に、地域に根ざした社会課題をリアルな「素材」として活用する。</p>
                         </div>
-                        <h3>Research</h3>
-                        <p>愛媛大学との研究連携。大学の知的資源とフィールドを活かし、課題解決に学術的な深みを加える。</p>
                     </div>
+
+                    <div class="why-card why-research">
+                        <div class="why-card-bg">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://zero2entrepreneur.com/images/z2e-research-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="why-card-content">
+                            <div class="why-icon">
+                                <i class="fa-solid fa-flask"></i>
+                            </div>
+                            <h3>Research</h3>
+                            <div class="why-card-line"></div>
+                            <p>愛媛大学との研究連携。大学の知的資源とフィールドを活かし、課題解決に学術的な深みを加える。</p>
+                        </div>
+                    </div>
+
+                    <!-- Connector lines (desktop) -->
+                    <div class="why-connector-lines" aria-hidden="true">
+                        <div class="why-connector-line"></div>
+                        <div class="why-connector-line"></div>
+                    </div>
+                </div>
+
+                <!-- Intersection anchor -->
+                <div class="why-intersection reveal">
+                    <div class="why-intersection-inner">
+                        <span class="why-intersection-label">Intersection</span>
+                        <h4>Setouchi Global Bootcamp</h4>
+                        <p>地域課題を、世界水準の方法論で実践する</p>
+                    </div>
+                </div>
+
+                <!-- Mobile connectors -->
+                <div class="why-mobile-connector" aria-hidden="true">
+                    <i class="fa-solid fa-plus"></i>
                 </div>
             </div>
         </section>
@@ -259,10 +292,20 @@
                     <h2 class="section-heading serif-heading">7日間で何をするのか</h2>
                     <p class="section-sub">4つのフェーズで積み上がる「成長の階段」。</p>
                 </div>
-                <!-- Phase ladder -->
+                <!-- Toggle button -->
+                <div class="schedule-toggle-wrap">
+                    <button class="schedule-toggle" id="scheduleToggle" aria-expanded="false" onclick="toggleSchedule()">
+                        <span class="schedule-toggle-text" id="scheduleToggleText">7日間のプログラムを見る</span>
+                        <i class="fa-solid fa-chevron-down schedule-toggle-icon"></i>
+                    </button>
+                </div>
+
+                <!-- Phase ladder (hidden by default) -->
+                <div class="phase-ladder-wrap" id="phaseLadderWrap">
                 <div class="phase-ladder">
                     <!-- Phase 1: DISCOVER -->
                     <div class="phase-card phase-discover">
+                        <img class="phase-photo" src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(2).jpg" alt="Maker Skills ワークショップ">
                         <div class="phase-meta">
                             <span class="phase-days">Days 1–2</span>
                             <span class="phase-dates">8/16〜8/17</span>
@@ -291,6 +334,7 @@
 
                     <!-- Phase 2: DESIGN -->
                     <div class="phase-card phase-design">
+                        <img class="phase-photo" src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(3).jpg" alt="Innovation Exploration ワークショップ">
                         <div class="phase-meta">
                             <span class="phase-days">Days 3–4</span>
                             <span class="phase-dates">8/18〜8/19</span>
@@ -319,6 +363,7 @@
 
                     <!-- Phase 3: BUILD -->
                     <div class="phase-card phase-build">
+                        <img class="phase-photo" src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(6).jpg" alt="Entrepreneurship Venture プレゼン">
                         <div class="phase-meta">
                             <span class="phase-days">Days 5–6</span>
                             <span class="phase-dates">8/20〜8/21</span>
@@ -347,6 +392,7 @@
 
                     <!-- Phase 4: DEMO DAY -->
                     <div class="phase-card phase-demo">
+                        <img class="phase-photo" src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(7).jpg" alt="Demo Day 最終発表">
                         <div class="phase-meta">
                             <span class="phase-days">Day 7</span>
                             <span class="phase-dates">8/22 (土)</span>
@@ -370,6 +416,7 @@
                         </ul>
                         <p class="phase-goal">7日間の成果を世界に向けて発信する</p>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -520,73 +567,6 @@
                     </div>
                     <div class="gallery-item">
                         <img src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(4).jpg" alt="フィールドリサーチ" loading="lazy">
-                    </div>
-                </div>
-                <div class="gallery-method-row">
-                    <div class="gallery-method-text">
-                        <h3 class="serif-heading" style="font-size:1.4rem;">MIT発の実証済みメソッド</h3>
-                        <p style="color:rgba(255,255,255,.75); line-height:1.7;">
-                            Zero2Makerグラフィックワークブックは、STEM・デザイン・起業家精神を融合した体験型教材。12カ国・4,000人以上が同じメソッドで学んできた実績がこのプログラムの基盤です。
-                        </p>
-                    </div>
-                    <div class="gallery-method-img">
-                        <img src="https://zero2maker.com/images/zero-to-entrepreneur-framework.jpg" alt="Zero2Entrepreneur Framework" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===================================================
-             6. 参加して得られること（OUTCOMES）
-             =================================================== -->
-        <section id="outcomes" class="section bg-light reveal">
-            <div class="wrapper">
-                <div class="section-header text-center mb-5">
-                    <p class="section-label text-orange">OUTCOMES</p>
-                    <h2 class="section-heading serif-heading">参加して得られること</h2>
-                </div>
-                <div class="outcomes-grid">
-                    <div class="outcome-card">
-                        <div class="outcome-icon bg-blue">
-                            <i class="fa-solid fa-screwdriver-wrench"></i>
-                        </div>
-                        <h3>ゼロからつくる体験</h3>
-                        <p>CAD・コーディング・3Dプリンターを使い、アイデアを実際に動くプロトタイプとして形にする。「考えた」ではなく「つくった」という事実が残る。</p>
-                    </div>
-                    <div class="outcome-card">
-                        <div class="outcome-icon bg-orange">
-                            <i class="fa-solid fa-microphone-lines"></i>
-                        </div>
-                        <h3>英語でのピッチ経験</h3>
-                        <p>最終発表は日英バイリンガルで実施。海外メンターの前で自分のアイデアを届ける緊張と達成感が、英語への自信に変わる。</p>
-                    </div>
-                    <div class="outcome-card">
-                        <div class="outcome-icon bg-green">
-                            <i class="fa-solid fa-binoculars"></i>
-                        </div>
-                        <h3>地域課題を見る視点</h3>
-                        <p>瀬戸内のフィールドに出て、地域社会の課題を自分の目で観察・分析する。社会問題を「自分ごと」として捉える視座が育つ。</p>
-                    </div>
-                    <div class="outcome-card">
-                        <div class="outcome-icon bg-navy">
-                            <i class="fa-solid fa-people-group"></i>
-                        </div>
-                        <h3>国内外の同世代との協働</h3>
-                        <p>異なる地域・背景・言語を持つ50名と7日間本気でチームを組む。この経験と繋がりは、キャンプ後も続く本物のネットワークになる。</p>
-                    </div>
-                </div>
-
-                <!-- Mentor track note -->
-                <div class="mentor-track-note mt-5">
-                    <div class="mentor-track-inner">
-                        <div class="mentor-track-icon">
-                            <i class="fa-solid fa-chalkboard-user"></i>
-                        </div>
-                        <div>
-                            <strong>Local Peer Mentorとして参加したい方へ</strong>
-                            <p>愛媛大学教育学部の学生を対象に、Local Peer Mentor（8名）を別途募集します。詳細は<a href="#apply">こちら</a>からお問い合わせください。
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1112,7 +1092,6 @@
                         <li><a href="#what">概要</a></li>
                         <li><a href="#schedule">7日間</a></li>
                         <li><a href="#who">参加者構成</a></li>
-                        <li><a href="#outcomes">得られること</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -1146,8 +1125,24 @@
         </div>
     </footer>
 
-    <script src="i18n.js"></script>
+    <script src="i18n.js?v=2"></script>
     <script src="script.js"></script>
+    <script>
+    function toggleSchedule() {
+        var wrap = document.getElementById('phaseLadderWrap');
+        var btn = document.getElementById('scheduleToggle');
+        var text = document.getElementById('scheduleToggleText');
+        var isOpen = wrap.classList.toggle('expanded');
+        btn.classList.toggle('open', isOpen);
+        btn.setAttribute('aria-expanded', isOpen);
+        text.textContent = (typeof getToggleText === 'function') ? getToggleText(isOpen) : (isOpen ? 'プログラムを閉じる' : '7日間のプログラムを見る');
+        if (isOpen) {
+            setTimeout(function() {
+                wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+    }
+    </script>
 </body>
 
 </html>

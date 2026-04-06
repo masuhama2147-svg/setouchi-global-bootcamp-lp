@@ -178,9 +178,49 @@ document.addEventListener('DOMContentLoaded', () => {
     // 10. Stagger animations for grids
     // =========================================================
     document.querySelectorAll(
-        '.phase-ladder > .phase-card, .outcomes-grid > *, .faculty-grid > *, .trust-grid > *'
+        '.phase-ladder > .phase-card, .outcomes-grid > *, .faculty-grid > *, .trust-grid > *, .what-features > .what-feature-card'
     ).forEach((el, i) => {
         el.style.transitionDelay = `${i * 0.07}s`;
     });
 
+
+    // =========================================================
+    // 11. WHY section — Intersection pulse after cards converge
+    // =========================================================
+    const whySection = document.querySelector('#why');
+    const whyIntersection = document.querySelector('.why-intersection');
+    if (whySection && whyIntersection) {
+        const whyObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    // Pulse fires 1.3s after cards start converging (0.4s delay + 0.9s animation)
+                    setTimeout(() => {
+                        whyIntersection.classList.add('pulse');
+                    }, 1300);
+                    whyObs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        whyObs.observe(whySection);
+    }
+
+
 });
+
+// =========================================================
+// 12. Schedule toggle — expand/collapse phase ladder
+// =========================================================
+function toggleSchedule() {
+    var wrap = document.getElementById('phaseLadderWrap');
+    var btn = document.getElementById('scheduleToggle');
+    var text = document.getElementById('scheduleToggleText');
+    var isOpen = wrap.classList.toggle('expanded');
+    btn.classList.toggle('open', isOpen);
+    btn.setAttribute('aria-expanded', isOpen);
+    text.textContent = isOpen ? 'プログラムを閉じる' : '7日間のプログラムを見る';
+    if (isOpen) {
+        setTimeout(function() {
+            wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+    }
+}
