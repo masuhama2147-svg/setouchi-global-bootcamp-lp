@@ -581,10 +581,33 @@ a {
     position: absolute;
     inset: 0;
     background-color: var(--navy);
-    background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop');
-    background-size: cover;
-    background-position: center 30%;
     z-index: 0;
+    overflow: hidden;
+}
+
+.hero-slideshow {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    will-change: opacity;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero-video {
+    display: none;
 }
 
 .hero-overlay {
@@ -1150,6 +1173,14 @@ a {
     margin-top: 0.5rem;
 }
 
+.phase-flow-img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: var(--r-sm);
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+}
+
 .phase-arrow {
     display: flex;
     justify-content: center;
@@ -1370,16 +1401,50 @@ a {
 }
 
 /* ==========================================================================
-   Section 5.5: Zero2Maker Gallery
+   Section 5.5: Bootcamp Gallery
    ========================================================================== */
-.z2m-gallery {
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-item {
+    border-radius: var(--r-md);
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-wide {
+    grid-column: span 2;
+}
+
+.gallery-tall {
+    grid-row: span 2;
+}
+
+.gallery-method-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
+    margin-top: 2rem;
 }
 
-.z2m-workbook-img {
+.gallery-method-img img {
     width: 100%;
     max-width: 480px;
     border-radius: var(--r-md);
@@ -1387,16 +1452,21 @@ a {
 }
 
 @media (max-width: 768px) {
-    .z2m-gallery {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 160px;
+    }
+
+    .gallery-method-row {
         grid-template-columns: 1fr;
         text-align: center;
     }
 
-    .z2m-gallery-img {
+    .gallery-method-img {
         order: -1;
     }
 
-    .z2m-workbook-img {
+    .gallery-method-img img {
         max-width: 320px;
     }
 }
@@ -2252,6 +2322,20 @@ a {
     background: var(--gray-300);
 }
 
+.partner-logo-img {
+    height: 22px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+.partner-with-logo:hover .partner-logo-img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -2745,5 +2829,55 @@ a {
 @media (max-width: 768px) {
     .lang-en .hero-title {
         font-size: 2.2rem;
+    }
+}
+
+/* Chinese Version Overrides */
+.lang-zh {
+    font-family: 'Noto Sans SC', 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+.lang-zh .serif-heading {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 700;
+}
+
+.lang-zh .hero-title {
+    font-size: 3rem;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .lang-zh .hero-title {
+        font-size: 2rem;
+    }
+}
+
+/* Hindi Version Overrides */
+.lang-hi {
+    font-family: 'Noto Sans Devanagari', 'Noto Sans JP', sans-serif;
+    letter-spacing: 0;
+    line-height: 1.85;
+}
+
+.lang-hi .serif-heading {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.lang-hi .hero-title {
+    font-size: 2.6rem;
+    line-height: 1.4;
+}
+
+.lang-hi .body-large {
+    line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+    .lang-hi .hero-title {
+        font-size: 1.8rem;
     }
 }

@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&family=Outfit:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+Devanagari:wght@300;400;500;700&family=Outfit:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -62,6 +62,8 @@
                     <select id="lang-select">
                         <option value="ja">JP</option>
                         <option value="en">EN</option>
+                        <option value="zh">ZH</option>
+                        <option value="hi">HI</option>
                     </select>
                 </div>
                 <a href="#apply" class="btn btn-navy btn-small desktop-only">
@@ -89,6 +91,18 @@
              =================================================== -->
         <section id="hero" class="hero-section">
             <div class="hero-bg">
+                <video class="hero-video" autoplay loop muted playsinline
+                    poster="https://img.youtube.com/vi/jXKS-bSX8fk/maxresdefault.jpg">
+                    <source src="https://zero2entrepreneur.com/images/colored/z2e_kl (1).jpg" type="video/mp4">
+                </video>
+                <div class="hero-slideshow">
+                    <img class="hero-slide active" src="https://zero2maker.com/images/hero%20section/Z2E-001.jpg" alt="">
+                    <img class="hero-slide" src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(2).jpg" alt="">
+                    <img class="hero-slide" src="https://zero2maker.com/images/hero%20section/Z2E-003.jpg" alt="">
+                    <img class="hero-slide" src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(4).jpg" alt="">
+                    <img class="hero-slide" src="https://zero2maker.com/images/hero%20section/Z2E-004.jpg" alt="">
+                    <img class="hero-slide" src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(6).jpg" alt="">
+                </div>
                 <div class="hero-overlay"></div>
             </div>
             <div class="hero-content wrapper">
@@ -164,7 +178,7 @@
                     </div>
                     <div class="what-tags">
                         <div class="what-image-block">
-                            <img src="https://www.rajeshnair.me/assets/images/framework.PNG" alt="Zero2Maker / Zero2Entrepreneur フレームワーク" class="what-framework-img">
+                            <img src="https://zero2maker.com/images/zero-to-entrepreneur-framework.jpg" alt="Zero2Maker / Zero2Entrepreneur フレームワーク" class="what-framework-img">
                             <p class="what-image-caption">MIT発 Pre-Entrepreneurship Development Framework</p>
                         </div>
                         <div class="tag-cloud">
@@ -271,6 +285,7 @@
                             <li><i class="fa-solid fa-circle-dot"></i>チームビルディング・キックオフ</li>
                         </ul>
                         <p class="phase-goal">自分の手でものをつくる感覚を体得する</p>
+                        <img class="phase-flow-img" src="https://zero2entrepreneur.com/images/day1-2-maker-skills.png" alt="Day 1-2 Maker Skills Flow">
                     </div>
                     <div class="phase-arrow"><i class="fa-solid fa-arrow-down"></i></div>
 
@@ -298,6 +313,7 @@
                             <li><i class="fa-solid fa-circle-dot"></i>グローバルセッション（海外メンター）</li>
                         </ul>
                         <p class="phase-goal">社会課題をとらえ、解決策の原型を描く</p>
+                        <img class="phase-flow-img" src="https://zero2entrepreneur.com/images/day3-4-innovation.png" alt="Day 3-4 Innovation Flow">
                     </div>
                     <div class="phase-arrow"><i class="fa-solid fa-arrow-down"></i></div>
 
@@ -325,6 +341,7 @@
                             <li><i class="fa-solid fa-circle-dot"></i>ピッチ準備・最終磨き込み</li>
                         </ul>
                         <p class="phase-goal">アイデアをビジネスとして成立させる</p>
+                        <img class="phase-flow-img" src="https://zero2entrepreneur.com/images/day5-6-entrepreneurship.png" alt="Day 5-6 Entrepreneurship Flow">
                     </div>
                     <div class="phase-arrow"><i class="fa-solid fa-arrow-down"></i></div>
 
@@ -470,20 +487,50 @@
         </section>
 
         <!-- ===================================================
-             5.5 Zero2Maker GALLERY
+             5.5 BOOTCAMP HIGHLIGHTS GALLERY
              =================================================== -->
-        <section class="section-sm bg-navy text-white reveal">
+        <section id="gallery" class="section bg-navy text-white reveal">
             <div class="wrapper">
-                <div class="z2m-gallery">
-                    <div class="z2m-gallery-text">
-                        <p class="section-label text-green">ZERO2MAKER METHOD</p>
-                        <h3 class="serif-heading" style="font-size:1.5rem;">MIT発の実践メソッドを採用</h3>
+                <div class="section-header text-center mb-5">
+                    <p class="section-label text-green">BOOTCAMP HIGHLIGHTS</p>
+                    <h2 class="section-heading serif-heading gallery-heading">世界各地のブートキャンプから</h2>
+                    <p class="section-sub text-light-sub">Zero2Entrepreneurプログラムで実際に行われたワークショップの様子</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item gallery-wide">
+                        <img src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(1).jpg" alt="ブートキャンプ ワークショップ" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(2).jpg" alt="チームコラボレーション" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(3).jpg" alt="プロトタイピング" loading="lazy">
+                    </div>
+                    <div class="gallery-item gallery-tall">
+                        <img src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(5).jpg" alt="ハンズオン制作" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(6).jpg" alt="プレゼンテーション" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(7).jpg" alt="メンタリング" loading="lazy">
+                    </div>
+                    <div class="gallery-item gallery-wide">
+                        <img src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(8).jpg" alt="Demo Day" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://zero2entrepreneur.com/images/colored/z2e_kl%20(4).jpg" alt="フィールドリサーチ" loading="lazy">
+                    </div>
+                </div>
+                <div class="gallery-method-row">
+                    <div class="gallery-method-text">
+                        <h3 class="serif-heading" style="font-size:1.4rem;">MIT発の実証済みメソッド</h3>
                         <p style="color:rgba(255,255,255,.75); line-height:1.7;">
-                            Zero2Makerグラフィックワークブックは、STEM・デザイン・起業家精神を融合した体験型教材。イラストとステップバイステップのプロジェクトで、アイデア発想からプロトタイピング、3D設計、回路、コーディングまでを学びます。
+                            Zero2Makerグラフィックワークブックは、STEM・デザイン・起業家精神を融合した体験型教材。12カ国・4,000人以上が同じメソッドで学んできた実績がこのプログラムの基盤です。
                         </p>
                     </div>
-                    <div class="z2m-gallery-img">
-                        <img src="https://www.rajeshnair.me/assets/images/z2m-comicbooks.png" alt="Zero2Maker Graphic Workbooks" class="z2m-workbook-img">
+                    <div class="gallery-method-img">
+                        <img src="https://zero2maker.com/images/zero-to-entrepreneur-framework.jpg" alt="Zero2Entrepreneur Framework" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -557,14 +604,14 @@
                 </div>
                 <div class="faculty-grid">
                     <div class="faculty-card">
-                        <img class="faculty-avatar-img" src="https://d3t35pgnsskh52.cloudfront.net/uploads%2F44436_Rajesh+pic3.jpg" alt="Rajesh Nair">
+                        <img class="faculty-avatar-img" src="https://zero2entrepreneur.com/images/rajesh-nair.jpg" alt="Rajesh Nair">
                         <h4>Rajesh Nair</h4>
                         <p class="faculty-role">CEO, EnCube Labs</p>
                         <p class="faculty-desc">
                             MIT発の起業家教育フレームワーク「Zero2Maker」開発者。世界12カ国・4,000人以上の若者を起業家思考へと導いてきた。本プログラムのカリキュラム設計を統括する。</p>
                     </div>
                     <div class="faculty-card">
-                        <img class="faculty-avatar-img" src="https://miro.medium.com/v2/resize:fill:400:400/1*xh44TLk8xsHTQbOAnHwsPw.png" alt="白川 寧々">
+                        <img class="faculty-avatar-img" src="https://zero2entrepreneur.com/images/ning-shirakawa.jpg" alt="白川 寧々">
                         <h4>白川 寧々</h4>
                         <p class="faculty-role">Co-founder, EnCube Labs / MIT MBA</p>
                         <p class="faculty-desc">
@@ -1018,9 +1065,19 @@
                         <span>YURUGAS</span>
                     </div>
                     <div class="partner-mini-sep"></div>
-                    <div class="partner-mini">
-                        <i class="fa-solid fa-flask"></i>
+                    <div class="partner-mini partner-with-logo">
+                        <img src="https://zero2entrepreneur.com/images/encube.png" alt="EnCube Labs" class="partner-logo-img">
                         <span>EnCube Labs</span>
+                    </div>
+                    <div class="partner-mini-sep"></div>
+                    <div class="partner-mini partner-with-logo">
+                        <img src="https://zero2entrepreneur.com/images/z2e.png" alt="Zero2Entrepreneur" class="partner-logo-img">
+                        <span>Zero2Entrepreneur</span>
+                    </div>
+                    <div class="partner-mini-sep"></div>
+                    <div class="partner-mini partner-with-logo">
+                        <img src="https://zero2maker.com/z2m-logo.png" alt="Zero2Maker" class="partner-logo-img">
+                        <span>Zero2Maker</span>
                     </div>
                     <div class="partner-mini-sep"></div>
                     <div class="partner-mini">
